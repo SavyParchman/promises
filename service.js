@@ -19,3 +19,15 @@ angular.module('app').service('service', function($http, $q) {
     return promise;
   };
 });
+
+// angular.module("app").service("service", function($http){
+//   this.promise = function(){
+//     var promise = $q(function(res, rej){
+//       console.log('starting external web call');
+//       setTimeout(function() {
+//         console.log("we're back from the external web call");
+//         res('SomethingFromSomeoneElse');
+//       }, 2000);
+//     })
+//   }
+// })
