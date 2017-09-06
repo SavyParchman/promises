@@ -7,7 +7,11 @@
    <title></title>
  </head>
  <body ng-controller="Ctrl">
-
+   <input type="text" ng-model="newTodo" name="" value="">
+   <button type="button" name="button" ng-click="submitTodo(newTodo)">Submit</button>
+   <div class="" ng-repeat="todo in todos">
+     {{ todo }}
+   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
 <script src="ctrl.js"></script>
 <script src="service.js"></script>
